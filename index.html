@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hệ thống quản lý chat đa nền tảng VSS">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/png" href="img/vss-logo.png" sizes="16x16">
+  <title>Quên mật khẩu - VSS Chat Platform</title>
+</head>
+
+<body>
+  <main class="container" id="main-content">
+    <section class="left" aria-label="Giới thiệu hệ thống">
+      <img src="img/background-login-page.png" alt="Hình minh họa hệ thống quản lý chat" loading="lazy">
+      <div class="text-content">
+        <h1>Hệ thống quản lý chat đa nền tảng</h1>
+        <p>Tiết kiệm thời gian tư vấn và chăm sóc khách hàng</p>
+        <div class="dots" role="presentation">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="right" aria-label="Form quên mật khẩu">
+      <div class="languages-selector">
+        <img src="icon/language_icon.png" alt="Chọn ngôn ngữ" class="language-icon">
+        <select class="languages-selector-select" aria-label="Chọn ngôn ngữ">
+          <option value="vi">Tiếng Việt</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      
+      <div class="forgot-password-form">
+        <header class="forgot-password-form-header">
+          <button type="button" class="back-button" aria-label="Quay lại trang trước">
+            <img src="icon/back_icon.jpg" alt="" class="back-icon">
+            Quay lại
+          </button>
+          <h2 class="forgot-password-form-header-title">Quên mật khẩu</h2>
+        </header>
+        
+        <img src="img/forgot-password-img.png" alt="Hình minh họa quên mật khẩu" class="forgot-password-img" loading="lazy">
+        
+        <div class="forgot-password-form-content">
+          <h3 class="forgot-password-form-title">Bạn đã quên mật khẩu?</h3>
+          <p class="forgot-password-form-description" id="forgot-password-form-description">
+            Đừng lo lắng, hãy nhập tài khoản hoặc email của bạn ở dưới để tìm kiếm tài khoản của bạn
+          </p>
+        </div>
+        
+        <form class="email-form" novalidate>
+          <label for="email-input" class="sr-only">Tài khoản hoặc email</label>
+          <input 
+            type="email" 
+            id="email-input"
+            class="email-input" 
+            placeholder="Nhập tài khoản/email" 
+            required 
+            autocomplete="email"
+            aria-describedby="email-error">
+          <div id="email-error" class="error-message" aria-live="polite"></div>
+          <button type="submit" class="continue-button">Tiếp tục</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
